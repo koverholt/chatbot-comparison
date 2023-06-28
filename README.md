@@ -3,7 +3,7 @@
 ## Build and deploy the app with Cloud Run
 
 ```
-gcloud run deploy chatbot-comparison . --source --allow-unauthenticated --region us-central1
+gcloud run deploy chatbot-comparison --allow-unauthenticated --region us-central1 --source .
 ```
 
 ## Access the app
