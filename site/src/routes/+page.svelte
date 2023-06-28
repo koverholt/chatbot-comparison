@@ -4,7 +4,23 @@
 	import { onMount } from 'svelte';
 
 	onMount(() => {
-		// code
+
+		document.querySelectorAll('iframe').forEach( item =>
+		  setTimeout(function(){ item.contentWindow.document.body.querySelector("df-messenger").shadowRoot.querySelector("df-messenger-chat").shadowRoot.querySelector("df-messenger-user-input").shadowRoot.querySelector(".input-box-wrapper > input").value="Hello" }, 1000)
+		)
+
+		document.querySelectorAll('iframe').forEach( item =>
+		  setTimeout(function(){ item.contentWindow.document.body.querySelector("df-messenger").shadowRoot.querySelector("df-messenger-chat").shadowRoot.querySelector("df-messenger-user-input").shadowRoot.querySelector(".input-box-wrapper > button").click() }, 2000)
+		)
+
+    document.querySelectorAll('iframe').forEach( item =>
+		  setTimeout(function(){ item.contentWindow.document.body.querySelector("df-messenger").shadowRoot.querySelector("df-messenger-chat").shadowRoot.querySelector("df-messenger-user-input").shadowRoot.querySelector(".input-box-wrapper > input").value="Does the Pixel 7 Pro support fast charging?" }, 5000)
+		)
+
+    document.querySelectorAll('iframe').forEach( item =>
+		  setTimeout(function(){ item.contentWindow.document.body.querySelector("df-messenger").shadowRoot.querySelector("df-messenger-chat").shadowRoot.querySelector("df-messenger-user-input").shadowRoot.querySelector(".input-box-wrapper > button").click() }, 6000)
+		)
+
 	});
 </script>
 

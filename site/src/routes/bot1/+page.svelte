@@ -6,6 +6,9 @@
 		script.src = "https://www.gstatic.com/dialogflow-console/fast/messenger-cx/bootstrap.js?v=1";
 		script.async = true;
 		document.head.appendChild(script);
+
+			// setTimeout(function(){ document.querySelector("df-messenger").shadowRoot.querySelector("df-messenger-chat").shadowRoot.querySelector("df-messenger-user-input").shadowRoot.querySelector(".input-box-wrapper > input").value="New placeholder text" }, 1000);
+
 	});
 </script>
 
