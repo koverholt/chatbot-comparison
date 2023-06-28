@@ -21,6 +21,22 @@
 		  setTimeout(function(){ item.contentWindow.document.body.querySelector("df-messenger").shadowRoot.querySelector("df-messenger-chat").shadowRoot.querySelector("df-messenger-user-input").shadowRoot.querySelector(".input-box-wrapper > button").click() }, 6000)
 		)
 
+    document.querySelectorAll('iframe').forEach( item =>
+		  setTimeout(function(){ item.contentWindow.document.body.querySelector("df-messenger").shadowRoot.querySelector("df-messenger-chat").shadowRoot.querySelector("df-messenger-user-input").shadowRoot.querySelector(".input-box-wrapper > input").value="How does the Pixel Watch track my time sleeping?" }, 10000)
+		)
+
+    document.querySelectorAll('iframe').forEach( item =>
+		  setTimeout(function(){ item.contentWindow.document.body.querySelector("df-messenger").shadowRoot.querySelector("df-messenger-chat").shadowRoot.querySelector("df-messenger-user-input").shadowRoot.querySelector(".input-box-wrapper > button").click() }, 11000)
+		)
+
+    document.querySelectorAll('iframe').forEach( item =>
+		  setTimeout(function(){ item.contentWindow.document.body.querySelector("df-messenger").shadowRoot.querySelector("df-messenger-chat").shadowRoot.querySelector("df-messenger-user-input").shadowRoot.querySelector(".input-box-wrapper > input").value="How does the Nest Camera tell the difference between people, animals, vehicles, and packages?" }, 15000)
+		)
+
+    document.querySelectorAll('iframe').forEach( item =>
+		  setTimeout(function(){ item.contentWindow.document.body.querySelector("df-messenger").shadowRoot.querySelector("df-messenger-chat").shadowRoot.querySelector("df-messenger-user-input").shadowRoot.querySelector(".input-box-wrapper > button").click() }, 16000)
+		)
+
 	});
 </script>
 
