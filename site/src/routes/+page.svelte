@@ -7,6 +7,10 @@
 	var utterance: string;
 
 	function fillAndSend(utterance: string, time: number) {
+		if (!utterance) {
+			return;
+		}
+
 		document.querySelectorAll('iframe').forEach((item) =>
 			setTimeout(function () {
 				item.contentWindow.document.body
@@ -16,6 +20,7 @@
 					.shadowRoot.querySelector('.input-box-wrapper > input').value = utterance;
 			}, time * 1000)
 		);
+
 		document.querySelectorAll('iframe').forEach((item) =>
 			setTimeout(function () {
 				item.contentWindow.document.body
@@ -28,13 +33,13 @@
 		);
 	}
 
-  function autoMode() {
-    fillAndSend('Does the Pixel 7 Pro support fast charging?', 1);
-    fillAndSend('How does the Pixel Watch track sleep?', 10);
-    fillAndSend('How long does the battery on the Nest Doorbell last?', 20);
-    fillAndSend('Which smart locks do you sell?',	30);
-    fillAndSend('How does the Nest Camera tell the difference between people, animals, vehicles, and packages?',	40);
-  }
+	function autoMode() {
+		fillAndSend('Does the Pixel 7 Pro support fast charging?', 1);
+		fillAndSend('How does the Pixel Watch track sleep?', 10);
+		fillAndSend('How long does the battery on the Nest Doorbell last?', 20);
+		fillAndSend('Which smart locks do you sell?', 30);
+		fillAndSend('How does the Nest Camera tell the difference between people, animals, vehicles, and packages?', 40);
+	}
 
 	onMount(() => {
 		fillAndSend('Hello', 1);
@@ -53,10 +58,18 @@
 	<div class="w-0 grow">
 		<form>
 			<ButtonGroup class="w-1/2 mb-9">
-        <Input class="w-full" type="text" id="utterance" bind:value={utterance} placeholder="Ask me anything about products in the Google Store" required />
-				<Button color="blue" type="submit" on:click={() => fillAndSend(utterance, 0)}>Submit</Button>
+				<Input
+					class="w-full"
+					type="text"
+					id="utterance"
+					bind:value={utterance}
+					placeholder="Ask me anything about products in the Google Store"
+					required
+				/>
+				<Button color="blue" type="submit" on:click={() => fillAndSend(utterance, 0)}>Submit</Button
+				>
 			</ButtonGroup>
-      <Button color="green" on:click={() => autoMode()}>Demo Mode</Button>
+			<Button color="green" on:click={() => autoMode()}>Demo Mode</Button>
 		</form>
 	</div>
 </div>
