@@ -29,12 +29,12 @@
 	}
 
   function autoMode() {
-      fillAndSend('Does the Pixel 7 Pro support fast charging?', 1);
-      fillAndSend('How does the Pixel Watch track sleep?', 10);
-      fillAndSend('How long does the battery on the Nest Doorbell last?', 20);
-      fillAndSend('Which smart locks do you sell?',	30);
-      fillAndSend('How does the Nest Camera tell the difference between people, animals, vehicles, and packages?',	40);
-    }
+    fillAndSend('Does the Pixel 7 Pro support fast charging?', 1);
+    fillAndSend('How does the Pixel Watch track sleep?', 10);
+    fillAndSend('How long does the battery on the Nest Doorbell last?', 20);
+    fillAndSend('Which smart locks do you sell?',	30);
+    fillAndSend('How does the Nest Camera tell the difference between people, animals, vehicles, and packages?',	40);
+  }
 
 	onMount(() => {
 		fillAndSend('Hello', 1);
@@ -54,24 +54,24 @@
 		<form>
 			<ButtonGroup class="w-1/2 mb-9">
         <Input class="w-full" type="text" id="utterance" bind:value={utterance} placeholder="Ask me anything about products in the Google Store" required />
-				<Button color="blue" type="submit" on:click={fillAndSend(utterance, 0)}>Submit</Button>
+				<Button color="blue" type="submit" on:click={() => fillAndSend(utterance, 0)}>Submit</Button>
 			</ButtonGroup>
-      <Button color="green" type="submit" on:click={autoMode()}>Demo Mode</Button>
+      <Button color="green" on:click={() => autoMode()}>Demo Mode</Button>
 		</form>
 	</div>
 </div>
 
 <div class="flex">
 	<div class="w-1/4">
-		<iframe src="/bot1.html" height="600" class="mx-auto" title="bot1" />
+		<iframe src="/bot1" height="600" class="mx-auto" title="bot1" />
 	</div>
 	<div class="w-1/4">
-		<iframe src="/bot2.html" height="600" class="mx-auto" title="bot2" />
+		<iframe src="/bot2" height="600" class="mx-auto" title="bot2" />
 	</div>
 	<div class="w-1/4">
-		<iframe src="/bot3.html" height="600" class="mx-auto" title="bot3" />
+		<iframe src="/bot3" height="600" class="mx-auto" title="bot3" />
 	</div>
 	<div class="w-1/4">
-		<iframe src="/bot4.html" height="600" class="mx-auto" title="bot4" />
+		<iframe src="/bot4" height="600" class="mx-auto" title="bot4" />
 	</div>
 </div>
