@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "gbot-test-062"
+  },
+  "targets": {
+    "gbot-test-062": {
+      "hosting": {
+        "chatbot-comparison": [
+          "chatbot-comparison"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

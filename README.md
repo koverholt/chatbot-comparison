@@ -1,11 +1,11 @@
 # bot-comparison
 
-## Build and deploy the app with Cloud Run
+## Build and deploy the app with Firebase
 
 ```
-gcloud run deploy chatbot-comparison --allow-unauthenticated --region us-central1 --source .
+firebase deploy
 ```
 
 ## Access the app
 
-[https://chatbot-comparison-z6qlog7hga-uc.a.run.app/](https://chatbot-comparison-z6qlog7hga-uc.a.run.app/)
+[https://chatbot-comparison.web.app](https://chatbot-comparison.web.app)
