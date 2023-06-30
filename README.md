@@ -1,10 +1,25 @@
 # bot-comparison
 
-## Build and deploy the app with Firebase
+## Build and deploy the app
 
-```
-firebase deploy
-```
+1. Clone this repository and cd to the `site/` directory.
+1. Install dependencies with NPM
+
+   ```
+   npm install
+   ```
+
+1. Build the site
+
+   ```
+   npm run build
+   ```
+
+1. Deploy the app
+
+   ```
+   firebase deploy
+   ```
 
 ## Access the app
 
