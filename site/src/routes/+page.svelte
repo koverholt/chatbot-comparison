@@ -28,11 +28,16 @@
 		);
 	}
 
+  function autoMode() {
+      fillAndSend('Does the Pixel 7 Pro support fast charging?', 0);
+      fillAndSend('How does the Pixel Watch track sleep?', 10);
+      fillAndSend('How long does the battery on the Nest Doorbell last?', 20);
+      fillAndSend('Which smart locks do you sell?',	30);
+      fillAndSend('How does the Nest Camera tell the difference between people, animals, vehicles, and packages?',	40);
+    }
+
 	onMount(() => {
-		fillAndSend('Hello', 1);
-		// fillAndSend('Does the Pixel 7 Pro support fast charging?', 5);
-		// fillAndSend('How does the Pixel Watch track sleep?', 15);
-		// fillAndSend('How does the Nest Camera tell the difference between people, animals, vehicles, and packages?',	25);
+		fillAndSend('Hello', 0);
 	});
 </script>
 
@@ -51,6 +56,7 @@
 				<Input class="w-full" type="text" id="utterance" bind:value={utterance} required />
 				<Button color="blue" type="submit" on:click={fillAndSend(utterance, 0)}>Submit</Button>
 			</ButtonGroup>
+      <Button color="green" type="submit" on:click={autoMode()}>Demo Mode</Button>
 		</form>
 	</div>
 </div>
