@@ -29,7 +29,7 @@
 	}
 
   function autoMode() {
-      fillAndSend('Does the Pixel 7 Pro support fast charging?', 0);
+      fillAndSend('Does the Pixel 7 Pro support fast charging?', 1);
       fillAndSend('How does the Pixel Watch track sleep?', 10);
       fillAndSend('How long does the battery on the Nest Doorbell last?', 20);
       fillAndSend('Which smart locks do you sell?',	30);
@@ -37,7 +37,7 @@
     }
 
 	onMount(() => {
-		fillAndSend('Hello', 0);
+		fillAndSend('Hello', 1);
 	});
 </script>
 
