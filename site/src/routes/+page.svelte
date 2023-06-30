@@ -4,7 +4,7 @@
 	import { Input, Label, Helper } from 'flowbite-svelte';
 	import { Button, ButtonGroup } from 'flowbite-svelte';
 
-	var utterance: string = 'Tell me about the Tensor G2 processor in the Pixel tablet';
+	var utterance: string;
 
 	function fillAndSend(utterance: string, time: number) {
 		document.querySelectorAll('iframe').forEach((item) =>
@@ -53,7 +53,7 @@
 	<div class="w-0 grow">
 		<form>
 			<ButtonGroup class="w-1/2 mb-9">
-				<Input class="w-full" type="text" id="utterance" bind:value={utterance} required />
+        <Input class="w-full" type="text" id="utterance" bind:value={utterance} placeholder="Ask me anything about products in the Google Store" required />
 				<Button color="blue" type="submit" on:click={fillAndSend(utterance, 0)}>Submit</Button>
 			</ButtonGroup>
       <Button color="green" type="submit" on:click={autoMode()}>Demo Mode</Button>
