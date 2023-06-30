@@ -63,15 +63,15 @@
 
 <div class="flex">
 	<div class="w-1/4">
-		<iframe src="/bot1" height="600" class="mx-auto" title="bot1" />
+		<iframe src="/bot1.html" height="600" class="mx-auto" title="bot1" />
 	</div>
 	<div class="w-1/4">
-		<iframe src="/bot2" height="600" class="mx-auto" title="bot2" />
+		<iframe src="/bot2.html" height="600" class="mx-auto" title="bot2" />
 	</div>
 	<div class="w-1/4">
-		<iframe src="/bot3" height="600" class="mx-auto" title="bot3" />
+		<iframe src="/bot3.html" height="600" class="mx-auto" title="bot3" />
 	</div>
 	<div class="w-1/4">
-		<iframe src="/bot4" height="600" class="mx-auto" title="bot4" />
+		<iframe src="/bot4.html" height="600" class="mx-auto" title="bot4" />
 	</div>
 </div>
