@@ -69,7 +69,7 @@
 				<Button color="blue" type="submit" on:click={() => fillAndSend(utterance, 0)}>Submit</Button
 				>
 			</ButtonGroup>
-			<Button color="green" on:click={() => autoMode()}>Demo Mode</Button>
+			<Button class="mx-2" color="green" on:click={() => autoMode()}>Demo Mode</Button>
 		</form>
 	</div>
 </div>
