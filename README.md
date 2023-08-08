@@ -1,5 +1,7 @@
 # bot-comparison
 
+Moved to https://github.com/GoogleCloudPlatform/contact-center-ai-samples
+
 ## Build and deploy the app
 
 1. Clone this repository and cd to the `site/` directory.
